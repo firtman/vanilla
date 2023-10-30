@@ -8,16 +8,16 @@
     switch (route) {
         case &quot;/&quot;:
             pageElement = document.createElement(&quot;h1&quot;);
-            pageElement.textContent(&quot;Menu&quot;);
+            pageElement.textContent = &quot;Menu&quot;;
             break;
         case &quot;/order&quot;:
             pageElement = document.createElement(&quot;h1&quot;);
-            pageElement.textContent(&quot;Menu&quot;);
+            pageElement.textContent = &quot;Menu&quot;;
             break;
         default:
             if (route.startsWith(&quot;/product-&quot;)) {                
                 pageElement = document.createElement(&quot;h1&quot;);
-                pageElement.textContent(&quot;Details&quot;);
+                pageElement.textContent = &quot;Details&quot;;
                 pageElement.dataset.productId = route.substring(route.lastIndexOf(&quot;-&quot;)+1);
             }
             break;   
